@@ -68,7 +68,15 @@
         <section class="hero-title">
             <div class="container hero-title">
             <h1 class="hero-h1">Эффективные решения для вашего бизнеса</h1>
-            <div class="button-hero"><button type="button" class="hero-button">Заказать услугу</button></div>
+            <div class="button-hero">
+                <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
+            </div>
+            </div>
+
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button data-modal-close>Закрыть</button>
+                </div>
             </div>
         </section>
 
@@ -143,16 +151,25 @@
                         <img src="./img./img-1.jpg" alt="чувак печатает на клавиатуре"
                         width="370"
                         height="294">
+                        <div class="description-activity">
+                            <p class="description-activity-text">Десктопные приложения</p>
+                        </div>
                     </li>
                     <li class="img-activity">
                         <img src="./img./img-2.jpg" alt="девушка смотрит в телефон"
                         width="370"
                         height="294">
+                        <div class="description-activity">
+                            <p class="description-activity-text">Мобильные приложения</p>
+                        </div>
                     </li>
                     <li class="img-activity">
                         <img src="./img./img-3.jpg" alt="палитра цветов"
                         width="370"
                         height="294">
+                        <div class="description-activity">
+                            <p class="description-activity-text">Дизайнерские решения</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -576,6 +593,8 @@
             </section>
         </div>
     </footer>
+    
+    <script src="./js/modal.js"></script>
 </body>
 </html>
 
