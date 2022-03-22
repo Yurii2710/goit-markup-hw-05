@@ -81,7 +81,6 @@ img {
 
 .header-link-studio {
     margin-right: 50px;
-
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -93,7 +92,6 @@ img {
 
 .header-link {
     margin-right: 50px;
-
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -225,7 +223,7 @@ img {
 
 .backdrop {
     position: fixed;
-    z-index: 100;
+    /* z-index: 100; */
     top: 0;
     left: 0;
     width: 100%;
@@ -786,7 +784,7 @@ img {
     padding-right: 24px;
     padding-bottom: 20px;
     padding-left: 24px;
-    
+
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
