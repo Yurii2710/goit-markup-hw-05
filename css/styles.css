@@ -781,10 +781,12 @@ img {
 }
 
 .project {
+    position: relative;
     flex-basis: calc(100% / 9 - 30px);
     margin-left: 30px;
     margin-bottom: 30px;
-
+    
+    overflow: hidden;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -793,7 +795,67 @@ img {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.project:hover .project-overlay,
+.project:focus .project-overlay {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.project:hover .overlay-text,
+.project:focus .overlay-text {
+    opacity: 1;
+}
+
+.project-content-img {
+    position: relative;
+    width: 370px;
+    height: 294px;
+}
+
+.project-overlay {
+    display: inline-block;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    
+    /* opacity: 0; */
+
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 322px;
+    height: 168px;
+    
+    z-index: 100;
+    opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlay-text-p {
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+
 .project-name-portfolio {
+    position: relative;
     padding-top: 20px;
     padding-right: 24px;
     padding-bottom: 20px;
