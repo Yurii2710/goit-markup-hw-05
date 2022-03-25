@@ -41,8 +41,6 @@ img {
 /* ---------------- HEADER ---------------- */
 
 .header {
-    padding-top: 24px;
-    padding-bottom: 25px;
     border-bottom: 1px solid #ECECEC;
 }
 
@@ -81,10 +79,13 @@ img {
     margin-right: 50px;
 }
 
-.header-link-studio {
-    position: relative;
+.nav-list {
+    padding-top: 32px;
     padding-bottom: 32px;
+    position: relative;
+}
 
+.header-link-studio {
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -717,7 +718,7 @@ img {
 
 /* ---------------- HEADER ---------------- */
 .header-link-portfolio {
-    position: relative;
+    padding-top: 32px;
     padding-bottom: 32px;
 
     font-family: Roboto;
