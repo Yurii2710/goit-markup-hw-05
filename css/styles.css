@@ -205,6 +205,8 @@ img {
 /* ---------------- HERO ---------------- */
 
 .hero-title {
+    padding-top: 200px;
+    padding-bottom: 200px;
     max-height: 600px;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4), 
@@ -221,7 +223,6 @@ img {
     left: 50%;
     transform: translate(-50%, 0);
 
-    padding-top: 200px;
     margin-bottom: 40px;
     max-width: 696px;
 
@@ -255,10 +256,6 @@ img {
     cursor: pointer;
     border: none;
     border-radius: 4px;
-}
-
-.button-hero {
-    padding-bottom: 200px; 
 }
 
 .backdrop {
@@ -695,7 +692,6 @@ img {
     
     width: 44px;
     height: 44px;
-    background-color: 10% #FFFFFF;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     color: #ffffff;
@@ -718,9 +714,6 @@ img {
 
 /* ---------------- HEADER ---------------- */
 .header-link-portfolio {
-    padding-top: 32px;
-    padding-bottom: 32px;
-
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -760,9 +753,12 @@ img {
     margin-left: 8px;
 }
 
+.button-portfolio-li:not(:last-child) {
+    margin-right: 8px;
+}
+
 .button-portfolio {
     flex-basis: calc(100% / 5 - 8px);
-    margin-left: 8px;
     padding-top: 6px;
     padding-right: 22px;
     padding-bottom: 6px;
@@ -804,6 +800,7 @@ img {
 }
 
 .project {
+    display: inline-block;
     position: relative;
     flex-basis: calc(100% / 9 - 30px);
     margin-left: 30px;
@@ -866,7 +863,6 @@ img {
 }
 
 .overlay-text-p {
-    
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -890,6 +886,8 @@ img {
 }
 
 .name-project {
+    margin-bottom: 4px;
+    
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
